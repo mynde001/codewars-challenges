@@ -13,6 +13,7 @@
 // Error checking for text strings or other invalid inputs is not required, only valid positive non-zero integers will be passed into the function.
 
 function narcissistic(value) {
+    let x = String(value).split('');
     let y = String(value).split('').map((e) => e ** x.length).reduce((prev, next) => prev + next);
     let result = y === value ? true : false;
     return result;
