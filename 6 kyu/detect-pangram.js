@@ -3,8 +3,7 @@
 
 function isPangram(string){
     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-    let x = string.match(/[A-Z]/gi).join('').toLowerCase();
-    let y = Array.from(new Set(x)).sort().join('');
-    let result = y === alphabet ? true : false;
+    let sortedStr = Array.from(new Set(string.toLowerCase())).sort().join('').trim();
+    let result = sortedStr === alphabet ? true : false;
     return result;
 };
