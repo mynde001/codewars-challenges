@@ -4,6 +4,5 @@
 function isPangram(string){
     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
     let sortedStr = Array.from(new Set(string.toLowerCase())).sort().join('').trim();
-    let result = sortedStr === alphabet ? true : false;
-    return result;
+    return sortedStr === alphabet ? true : false;
 };
