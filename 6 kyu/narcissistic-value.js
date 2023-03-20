@@ -15,7 +15,7 @@
 // Error checking for text strings or other invalid inputs is not required, only valid positive non-zero integers will be passed into the function.
 
 function narcissistic(value) {
-    const split_original_value = String(value).split('');
-    const calculation = String(value).split('').map((e) => e ** split_original_value.length).reduce((prev, next) => prev + next);
+    const splitOriginalValue = String(value).split('');
+    const calculation = String(value).split('').map((e) => e ** splitOriginalValue.length).reduce((prev, next) => prev + next);
     return calculation === value ? true : false;
 };
